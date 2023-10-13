@@ -48,24 +48,21 @@ function App() {
       dataArry.breeds.map(function(breedsData)
       {
         const breeds = breedsData;
-        name = breeds.name;
+        name = breeds.name+" ";
         bred_for =  breeds.bred_for;
         breed_group =  breeds.breed_group;
         life =  breeds.life;
-        setName(name+" ");
-        while(banState)
-        {
-          banned.map(function(ban){
-            if(names == ban)
-            {
-              makeQuery()
-              console.log("pain")
-            }
-          });
-          banState = false;
-        }
+        setName(name);
         setBredFor(bred_for);
         setBreedGroup(breed_group);
+        banned.map(function(ban)
+        {
+          if(name == ban)
+          {
+            console.log("banned")
+            makeQuery()
+          }
+        })
       })
     });
   }
