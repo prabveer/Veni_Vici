@@ -39,6 +39,7 @@ https://www.cockos.com/licecap/
 ## Notes
 
 Describe any challenges encountered while building the app.
+the challenges i would say i faced while doing this project was understanding the values i was recieveing from the API, for example when i was reciving an object i didnt know how to get the values inside the object at first, but then i learned about the .map() function which allowed me to access said values.
 
 ## License
 
